@@ -55,7 +55,7 @@ export default function HomeScreen({ navigation }) {
                         />
                         <TextInput
                             className="py-[1px] px-2 flex-1"
-                            placeholder="aaa"
+                            placeholder="search"
                         />
                     </View>
                     <AdjustmentsVerticalIcon size={20} color="#00ccbb" />

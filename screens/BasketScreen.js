@@ -4,17 +4,20 @@ import {
 }from 'react-native'
 import {useNavigation} from '@react-navigation/native'
 import { XMarkIcon } from "react-native-heroicons/solid";
+import BasketCard from "../components/BasketCard";
+import BasketCards from "../components/BasketCards";
+import BasketCheckout from "../components/BasketCheckout";
 
 export default BasketScreen = () => {
     const navigation = useNavigation()
     return (
         <ScrollView className="bg-gray-300">
-            <View className="bg-white flex-row items-center p-3">
+            <View className="bg-white flex-row items-center p-3 relative">
                 <View className="flex-1 items-center">
                     <Text className="font-bold text-xl">Basket</Text>
                     <Text className="text-sm text-gray-500">wagamama</Text>
                 </View>
-                <TouchableOpacity onPress={()=>navigation.goBack()} className="p-2 bg-maincolor rounded-full">
+                <TouchableOpacity onPress={()=>navigation.goBack()} className="p-2 bg-[#00ccbb] rounded-full absolute right-3">
                     <XMarkIcon size={25} color="white" />
                 </TouchableOpacity>
             </View>
@@ -24,9 +27,13 @@ export default BasketScreen = () => {
                     <Text className="mx-2">Delivery in 30 - 50 minutes</Text>
                 </View>
                 <TouchableOpacity>
-                    <Text className="text-sky-500">change</Text>
+                    <Text className="text-[#00ccbb]">change</Text>
                 </TouchableOpacity>
             </View>
+            {/** Basket cards */}
+            <BasketCards/>
+            {/** basket checkout */}
+            <BasketCheckout/>
         </ScrollView>
     );
 }
