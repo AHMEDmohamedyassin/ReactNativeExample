@@ -3,12 +3,12 @@ import BasketCard from "./BasketCard";
 
 export default BasketCards = () => {
     return(
-        <View>
+        <ScrollView className="bg-gray-200">
             <BasketCard/>
             <BasketCard/>
             <BasketCard/>
             <BasketCard/>
             <BasketCard/>
-        </View>
+        </ScrollView>
     )
 }

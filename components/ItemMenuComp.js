@@ -6,6 +6,7 @@ import {
     View, 
 } from "react-native";
 import { MinusIcon, PlusIcon } from "react-native-heroicons/solid";
+import ImageHook from "../Hooks/ImageHook";
 
 export const ItemMenuComp = () => {
     const [getDisplay , setDisplay] = useState('none')
@@ -19,7 +20,7 @@ export const ItemMenuComp = () => {
                     <Text className="text-gray-500 text-sm">L.E 50</Text>
                 </View>
                 <Image className="h-16 w-16 rounded-full ml-4 bg-black"
-                    source={{uri:"https://links.papareact.com/wru"}}
+                    source={{uri:ImageHook()}}
                 />
             </View>
             <View className="flex-row items-center py-2" style={{display: getCount? 'flex' : getDisplay}}>

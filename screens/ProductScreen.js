@@ -5,6 +5,7 @@ import { ArrowSmallLeftIcon, MapPinIcon, StarIcon } from "react-native-heroicons
 import MenuComp from "../components/MenuComp";
 import BasketButton from "../components/BasketButton";
 import {useNavigation} from '@react-navigation/native'
+import ImageHook from '../Hooks/ImageHook'
 
 export default function ProductScreen() {
     const navigation = useNavigation();
@@ -12,7 +13,7 @@ export default function ProductScreen() {
         <View className="relative">
             <ScrollView>
                 <View className="relative h-36">
-                    <Image source={{uri:"https://links.papareact.com/wru"}}
+                    <Image source={{uri: ImageHook()}}
                     className="w-full h-full absolute top-0 left-0"/>
                     <TouchableOpacity onPress={() => navigation.goBack()} className="absolute top-7 left-5 rounded-full p-2 bg-gray-200">
                         <ArrowSmallLeftIcon size={20} color="#00ccbb"/>

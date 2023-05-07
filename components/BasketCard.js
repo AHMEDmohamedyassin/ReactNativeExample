@@ -1,4 +1,5 @@
 import {Text , View , Image, TouchableOpacity} from 'react-native'
+import ImageHook from '../Hooks/ImageHook';
 
 export default BasketCard = () => {
     return (
@@ -6,7 +7,7 @@ export default BasketCard = () => {
             <View className="flex-row flex-1 justify-start items-center">
                 <Text className="text-[#00ccbb]">+2</Text>
                 <Image className="w-14 h-14 mx-5 rounded-full"
-                source={{uri:"https://links.papareact.com/wru"}}/>
+                source={{uri:ImageHook()}}/>
                 <Text>Edamame</Text>
             </View>
             <View className="flex-row flex-2 justify-between items-center">

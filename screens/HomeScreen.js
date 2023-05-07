@@ -17,6 +17,7 @@ import {
 import FeaturesComp from "../components/FeaturesComp";
 import CategoriesComp from "../components/CategoriesComp";
 import { ScrollView } from "react-native";
+import ImageHook from '../Hooks/ImageHook'
 
 export default function HomeScreen({ navigation }) {
     return (
@@ -30,8 +31,8 @@ export default function HomeScreen({ navigation }) {
                 <View className="flex-row items-center p-2 ">
                     <View className="flex-row flex-1">
                         <Image
-                            source={{ uri: "https://links.papareact.com/wru" }}
-                            className="w-8 h-8"
+                            source={{ uri: ImageHook() }}
+                            className="w-8 h-8 rounded-full"
                         />
                         <View className="mx-2">
                             <Text className="text-gray-500 text-xs">
