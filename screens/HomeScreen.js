@@ -1,10 +1,7 @@
 import {
-    Button,
     SafeAreaView,
     Text,
     View,
-    StatusBar,
-    StyleSheet,
     Image,
     TextInput,
 } from "react-native";
@@ -21,10 +18,7 @@ import ImageHook from '../Hooks/ImageHook'
 
 export default function HomeScreen({ navigation }) {
     return (
-        <SafeAreaView
-            style={{ flex: 1, marginTop: StatusBar.currentHeight }}
-            className="bg-gray-200"
-        >
+        <SafeAreaView className="bg-gray-200">
             {/** header */}
             <View className="bg-white py-1">
                 {/** header upper part */}

@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { Button, Text, View , Image , ScrollView , TouchableOpacity} from "react-native";
 import { ChevronRightIcon, QuestionMarkCircleIcon } from "react-native-heroicons/outline";
 import { ArrowSmallLeftIcon, MapPinIcon, StarIcon } from "react-native-heroicons/solid";

@@ -5,7 +5,7 @@ import {
     TouchableOpacity,
     View ,
 } from "react-native";
-import { ItemMenuComp } from "./ItemMenuComp";
+import ItemMenuComp  from "./ItemMenuComp";
 import {useNavigation} from '@react-navigation/native'
 
 export default MenuComp = () => {

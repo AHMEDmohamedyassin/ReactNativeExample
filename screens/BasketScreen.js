@@ -11,10 +11,7 @@ import ImageHook from '../Hooks/ImageHook'
 export default BasketScreen = () => {
     const navigation = useNavigation()
     return (
-        <SafeAreaView
-            style={{ flex: 1, marginTop: StatusBar.currentHeight }}
-            className="bg-gray-200"
-        >
+        <SafeAreaView className="bg-gray-200 flex-1">
             <View className="bg-white flex-row items-center p-3 relative">
                 <View className="flex-1 items-center">
                     <Text className="font-bold text-xl">Basket</Text>
